@@ -1,0 +1,161 @@
+/* General styles */
+.hidden {
+    display: none;
+}
+
+/* Select item styles */
+.select-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.select-item.active {
+    border-color: blue;
+    background-color: #f0f8ff;
+}
+
+.select-item img {
+    margin-right: 10px;
+}
+
+.active-slot {
+    display: none;
+}
+
+.select-item.active .active-slot {
+    display: block;
+}
+
+/* Loader styles */
+.loader {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Loader alignment */
+.large-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.large-loader img {
+    width: 300px;
+    height: auto;
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Card styles */
+.card {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.wallet-error {
+    color: rgb(242, 90, 103); /* Red color for text */
+    text-align: center; /* Center align the text */
+    background-color: rgba(242, 90, 103, 0.1); /* Light red background */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    display: block; /* Makes the container full width */
+    margin: 20px 0; /* Adds space above and below the error message */
+    border: 0px solid rgba(242, 90, 103, 0.2); /* Border for better appearance */
+    font-size: 14px; /* Ensure the font size matches */
+    line-height: 20px; /* Adjust line height for readability */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+
+/* Description styles */
+.head-desc.box {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px 20px;
+    border-radius: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+/* Centered loader with message */
+.loader-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.loader-wrapper .large-loader {
+    margin: 20px 0;
+}
+
+.loader-wrapper .btn.btn-dis {
+    background-color: #f0f0f0;
+    border: none;
+    color: #555555;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: not-allowed;
+    box-shadow: none;
+    text-align: center;
+    width: fit-content;
+    display: block;
+    margin-top: 70px;
+}
+
+/* Additional adjustment for button */
+.btn-primary {
+    display: block;
+    width: 100%; /* Ensure button is full width */
+    max-width: 500px; /* Set a maximum width */
+    margin: 0 auto; /* Center the button */
+    padding: 10px 0; /* Padding for better appearance */
+    font-size: 16px; /* Adjust font size */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #0057FF; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text */
+    margin-top: 0; /* Remove margin-top if there is any */
+    margin-bottom: 20px; /* Add margin-bottom to separate from the next element */
+}
